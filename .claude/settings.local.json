@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(sips -g pixelWidth -g pixelHeight -g format \"Will_Franke_-_Harmonator_Visuals_1783298643853.jpeg\")",
+      "Bash(sips -Z 900 -s formatOptions 75 \"Will_Franke_-_Harmonator_Visuals_1783298643853.jpeg\" --out \"Will_Franke_-_Harmonator_Visuals_1783298643853.jpeg\")",
+      "Bash(gh auth *)",
+      "Bash(npx serve *)",
+      "Bash(disown)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4174/tonechromawebsite/)",
+      "Bash(curl -sL -o /tmp/support.html -w \"%{http_code}\\\\n\" http://localhost:4174/tonechromawebsite/support)",
+      "Bash(curl -sL -o /tmp/about.html -w \"%{http_code}\\\\n\" http://localhost:4174/tonechromawebsite/about)",
+      "Bash(node -e ' *)",
+      "Bash(pkill -f \"serve /tmp/pages-sim\")",
+      "Bash(rm -rf /tmp/pages-sim /tmp/serve.log /tmp/serve2.log /tmp/support.html /tmp/about.html)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
