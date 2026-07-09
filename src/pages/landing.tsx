@@ -187,7 +187,7 @@ export default function Landing() {
               onClick={() => scrollTo("waitlist")}
               className="px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white transition-all duration-200 shadow-lg shadow-violet-900/30 hover:shadow-violet-800/40"
             >
-              Join Newsletter
+              Stay Connected
             </button>
           </div>
 
@@ -224,7 +224,7 @@ export default function Landing() {
               onClick={() => scrollTo("waitlist")}
               className="w-full px-5 py-3 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 text-white"
             >
-              Join Waitlist
+              Stay Connected
             </button>
           </div>
         )}
@@ -644,6 +644,24 @@ export default function Landing() {
               </form>
             )}
             <p className="text-xs text-slate-500 mt-4">Unsubscribe anytime.</p>
+            <div className="flex items-center justify-center gap-4 mt-6">
+              {[
+                { icon: Facebook, label: "Facebook", href: "#" },
+                { icon: Instagram, label: "Instagram", href: "https://instagram.com/tonechroma.app" },
+                { icon: Youtube, label: "YouTube", href: "#" },
+              ].map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target={social.href === "#" ? undefined : "_blank"}
+                  rel={social.href === "#" ? undefined : "noopener noreferrer"}
+                  aria-label={social.label}
+                  className="p-2 rounded-lg text-slate-500 hover:text-white hover:bg-white/[0.06] transition-all duration-200"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
           </RevealSection>
 
           <RevealSection delay={250}>
@@ -655,22 +673,6 @@ export default function Landing() {
       <footer className="relative border-t border-white/[0.06] py-16 px-6 pt-[20px] pb-[20px]">
         <div className="max-w-6xl mx-auto">
           <div className="pt-8 flex flex-col items-center gap-4">
-            <div className="flex items-center gap-4">
-              {[
-                { icon: Facebook, label: "Facebook" },
-                { icon: Instagram, label: "Instagram" },
-                { icon: Youtube, label: "YouTube" },
-              ].map((social) => (
-                <a
-                  key={social.label}
-                  href="#"
-                  aria-label={social.label}
-                  className="p-2 rounded-lg text-slate-500 hover:text-white hover:bg-white/[0.06] transition-all duration-200"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
             <div className="flex items-center gap-6">
               <p className="text-xs text-slate-600">
                 Copyright © {new Date().getFullYear()} Tonechroma. All rights reserved.
