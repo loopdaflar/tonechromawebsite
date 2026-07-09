@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import {
   Music,
   Palette,
@@ -617,7 +617,7 @@ export default function Landing() {
                 onSubmit={handleNewsletterSubmit}
                 className="flex flex-col items-center gap-3"
               >
-                <div className="flex flex-col items-stretch gap-3 w-full sm:w-fit mx-auto">
+                <div className="flex flex-col items-stretch gap-3 w-full sm:w-80 mx-auto">
                   <input
                     type="email"
                     value={newsletterEmail}
@@ -629,7 +629,7 @@ export default function Landing() {
                     <button
                       type="submit"
                       disabled={newsletterStatus === "sending"}
-                      className="w-full sm:w-auto px-7 py-3.5 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white transition-all duration-200 shadow-lg shadow-violet-900/30 hover:shadow-violet-800/40 flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
+                      className="w-full px-7 py-3.5 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white transition-all duration-200 shadow-lg shadow-violet-900/30 hover:shadow-violet-800/40 flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
                     >
                       {newsletterStatus === "sending" ? "Joining..." : "Join Newsletter"}
                       <ChevronRight className="w-4 h-4" />
@@ -646,9 +646,9 @@ export default function Landing() {
             <p className="text-xs text-slate-500 mt-4">Unsubscribe anytime.</p>
             <div className="flex items-center justify-center gap-4 mt-6">
               {[
-                { icon: Facebook, label: "Facebook", href: "#" },
+                { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61591699565319" },
                 { icon: Instagram, label: "Instagram", href: "https://instagram.com/tonechroma.app" },
-                { icon: Youtube, label: "YouTube", href: "#" },
+                { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@tonechroma/posts" },
               ].map((social) => (
                 <a
                   key={social.label}
@@ -675,14 +675,14 @@ export default function Landing() {
           <div className="pt-8 flex flex-col items-center gap-4">
             <div className="flex items-center gap-6">
               <p className="text-xs text-slate-600">
-                Copyright © {new Date().getFullYear()} Tonechroma. All rights reserved.
+                Copyright © {new Date().getFullYear()} Tone Chroma. All rights reserved.
               </p>
-              <a
-                href="#"
+              <Link
+                href="/privacy"
                 className="text-xs text-slate-600 hover:text-slate-400 transition-colors"
               >
                 Privacy
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-xs text-slate-600 hover:text-slate-400 transition-colors"
