@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { NEWSLETTER_FORM_ENDPOINT } from "@/lib/formspree";
 import heroDemoVideo from "@assets/hero_demo_video.mp4";
+import heroDemoVideoDesktop from "@assets/hero_demo_video_desktop.mp4";
 import appLogo from "@assets/Tone_Chroma_Logo_1775747839600.jpg";
 import showcaseVideo from "@assets/LandscapeInterfaceMediuml_1776024535574.mp4";
 import microtonalMatrixImage from "@assets/LandscapeInterfaceCrop2_1776026182385.mp4";
@@ -70,16 +71,35 @@ function RevealSection({
   );
 }
 
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(
+    () => window.matchMedia("(min-width: 768px)").matches,
+  );
+
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 768px)");
+    const onChange = () => setIsDesktop(mql.matches);
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
+
+  return isDesktop;
+}
+
 function HeroVideo() {
+  const isDesktop = useIsDesktop();
+  const src = isDesktop ? heroDemoVideoDesktop : heroDemoVideo;
+
   return (
     <div className="absolute inset-0 overflow-hidden">
       <video
+        key={src}
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        src={heroDemoVideo}
+        src={src}
       />
       <div className="absolute inset-0 bg-[#08091a]/55" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#08091a]/30 via-transparent to-[#08091a]/70" />

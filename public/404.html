@@ -8,7 +8,7 @@
       // like /support gets served this 404 page. Encode the real path into a
       // query string and redirect to index.html, which decodes it back before
       // the app mounts (see the script in index.html).
-      var pathSegmentsToKeep = 1; // keep "/tonechromawebsite"
+      var pathSegmentsToKeep = 0; // served from domain root (custom domain)
       var l = window.location;
       var segments = l.pathname.split("/");
       var basePath = segments.slice(0, 1 + pathSegmentsToKeep).join("/");
