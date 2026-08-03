@@ -274,15 +274,15 @@ export default function Landing() {
                 href={GOOGLE_PLAY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-transform duration-200 hover:scale-[1.02] block"
+                className="transition-transform duration-200 hover:scale-[1.02] -translate-y-[9px] sm:-translate-y-[13px] block"
               >
                 <img
                   src={googlePlayBadge}
                   alt="Get it on Google Play"
-                  className="block h-28 sm:h-40 w-auto max-w-[45vw] sm:max-w-none object-contain bg-transparent"
+                  className="block h-[130px] sm:h-[186px] w-auto max-w-[45vw] sm:max-w-none object-contain bg-transparent"
                 />
               </a>
-              <span className="block text-center -mt-10 sm:-mt-14 text-xs italic text-yellow-400 whitespace-nowrap">
+              <span className="block text-center -mt-[56px] sm:-mt-[80px] text-xs italic text-yellow-400 whitespace-nowrap">
                 Coming soon
               </span>
             </div>
