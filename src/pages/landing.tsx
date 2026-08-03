@@ -26,7 +26,7 @@ import appStoreBadge from "@assets/Apple_Store_Icon_1775684838067.png";
 import googlePlayBadge from "@assets/Google_Play_Icon_1775684910097.png";
 
 // Replace with your live App Store / Google Play listing URLs once published.
-const APP_STORE_URL = "#";
+const APP_STORE_URL = "https://apps.apple.com/us/app/tone-chroma/id6760430549";
 const GOOGLE_PLAY_URL = "#";
 
 function useScrollReveal() {
@@ -256,7 +256,7 @@ export default function Landing() {
             </p>
           </div>
 
-          <div className="flex flex-row items-center justify-center gap-4 w-full px-4 sm:px-0 mt-[0px]">
+          <div className="flex flex-row items-start justify-center gap-4 w-full px-4 sm:px-0 mt-[0px]">
             <a
               href={APP_STORE_URL}
               target="_blank"
@@ -269,18 +269,23 @@ export default function Landing() {
                 className="block h-28 sm:h-40 w-auto max-w-[45vw] sm:max-w-none object-contain bg-transparent"
               />
             </a>
-            <a
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-200 hover:scale-[1.02] flex-shrink"
-            >
-              <img
-                src={googlePlayBadge}
-                alt="Get it on Google Play"
-                className="block h-28 sm:h-40 w-auto max-w-[45vw] sm:max-w-none object-contain bg-transparent"
-              />
-            </a>
+            <div className="flex-shrink">
+              <a
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-[1.02] block"
+              >
+                <img
+                  src={googlePlayBadge}
+                  alt="Get it on Google Play"
+                  className="block h-28 sm:h-40 w-auto max-w-[45vw] sm:max-w-none object-contain bg-transparent"
+                />
+              </a>
+              <span className="block text-center -mt-10 sm:-mt-14 text-xs italic text-yellow-400 whitespace-nowrap">
+                Coming soon
+              </span>
+            </div>
           </div>
         </div>
       </section>
