@@ -31,7 +31,7 @@ export function SiteHeader({ scrolled = true }: { scrolled?: boolean }) {
           onClick={() => handleNav("/")}
           className="text-lg font-light tracking-[0.35em] uppercase landing-logo-gradient hover:opacity-80 transition-opacity"
         >
-          Tonechroma
+          Xenclavier
         </button>
 
         <div className="hidden md:flex items-center gap-6">

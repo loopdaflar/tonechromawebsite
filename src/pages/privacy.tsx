@@ -5,9 +5,9 @@ import { SiteHeader } from "@/components/site-header";
 const PRIVACY_HTML = `
 <p class="subtitle">Last updated July 09, 2026</p>
 
-<p>This Privacy Notice for Tone Chroma ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:</p>
+<p>This Privacy Notice for Xenclavier ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:</p>
 <ul>
-  <li>Download and use our mobile application, Tone Chroma, or any other application of ours that links to this Privacy Notice</li>
+  <li>Download and use our mobile application, Xenclavier, or any other application of ours that links to this Privacy Notice</li>
   <li>Engage with us in other related ways, including any marketing or events</li>
 </ul>
 <p><strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:tonechroma.app@gmail.com">tonechroma.app@gmail.com</a>.</p>
@@ -275,7 +275,7 @@ export default function Privacy() {
               Privacy Policy
             </h1>
             <p className="text-slate-400 text-lg leading-relaxed max-w-xl mx-auto">
-              How Tone Chroma handles your personal information across our
+              How Xenclavier handles your personal information across our
               app and website.
             </p>
           </div>

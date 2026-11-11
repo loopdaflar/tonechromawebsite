@@ -166,7 +166,7 @@ export default function Landing() {
             onClick={() => scrollTo("hero")}
             className="text-lg font-light tracking-[0.35em] uppercase landing-logo-gradient hover:opacity-80 transition-opacity"
           >
-            Tonechroma
+            Xenclavier
           </button>
 
           <div className="hidden md:flex items-center gap-6">
@@ -245,11 +245,11 @@ export default function Landing() {
           <div className="space-y-4 flex flex-col items-center w-full px-4 sm:px-0">
             <img
               src={appLogo}
-              alt="Tonechroma Logo"
+              alt="Xenclavier Logo"
               className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-cover"
             />
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-light tracking-[0.25em] leading-[1.1] uppercase landing-logo-gradient whitespace-nowrap">
-              T O N E C H R O M A
+              X E N C L A V I E R
             </h1>
             <p className="text-base sm:text-xl text-slate-400 max-w-lg mx-auto leading-relaxed whitespace-nowrap">
               Interactive Visualizer | Microtonal Matrix
@@ -307,7 +307,7 @@ export default function Landing() {
 
         </div>
       </section>
-      {/* ─── WHAT IS TONECHROMA ─── */}
+      {/* ─── WHAT IS XENCLAVIER ─── */}
       <section id="about" className="relative py-28 px-6">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-violet-800/8 rounded-full blur-[150px]" />
@@ -319,15 +319,21 @@ export default function Landing() {
               The Vision
             </p>
             <h2 className="text-3xl sm:text-4xl font-light tracking-tight">
-              What is Tone Chroma?
+              What is Xenclavier?
             </h2>
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
-                Tone Chroma is an interactive microtonal matrix for iOS and
+                Xenclavier is an interactive microtonal matrix for iOS and
                 Android, crafted for 21st century musicians.
               </p>
-              <p>Both musical instrument and visualizer, this innovative interface breaks through equal temperament's black-and-white and expands harmonic perception into a new universe of color. </p>
-              <p className="text-slate-300">Enter new harmonic horizons by exploring pure frequency relationships and synesthetic displays which allow you to <em>hear</em> and <em>see</em> universal vibrational patterns. {" "}
+              <p>
+                This innovative interface breaks through harmonic convention
+                and expands harmonic potential into new worlds of color.
+              </p>
+              <p className="text-slate-300">
+                Enter new horizons with pure frequency ratios &amp; synesthetic
+                forms where you <em>hear</em> and <em>see</em> universal
+                vibrational patterns.
               </p>
             </div>
           </RevealSection>
@@ -567,7 +573,7 @@ export default function Landing() {
                     <iframe
                       className="absolute inset-0 w-full h-full"
                       src={`https://www.youtube.com/embed/${item.videoId}`}
-                      title={`Tonechroma Step ${i + 1}`}
+                      title={`Xenclavier Step ${i + 1}`}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                     />
@@ -584,7 +590,7 @@ export default function Landing() {
           <RevealSection className="text-center">
             <div className="relative p-10 rounded-3xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06]">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-1 rounded-full bg-gradient-to-r from-violet-500 to-blue-500" />
-              <blockquote className="text-xl sm:text-2xl font-light text-slate-200 leading-relaxed mb-6 italic">"I stopped thinking about notes as fixed points and started hearing them as positions in a spectrum. Tone Chroma changed how I listen."</blockquote>
+              <blockquote className="text-xl sm:text-2xl font-light text-slate-200 leading-relaxed mb-6 italic">"I stopped thinking about notes as fixed points and started hearing them as positions in a spectrum. Xenclavier changed how I listen."</blockquote>
               <div className="text-sm text-slate-500">
                 <span className="text-slate-400">— Garrett A.</span>
                 <span className="mx-2 opacity-30">·</span>
@@ -608,7 +614,7 @@ export default function Landing() {
             </p>
             <h2 className="text-3xl sm:text-4xl font-light tracking-tight mb-4">Shape the Future</h2>
             <p className="text-lg text-slate-400 leading-relaxed">
-              Tone Chroma is evolving. Join the newsletter to receive updates,
+              Xenclavier is evolving. Join the newsletter to receive updates,
               early access, and an invitation to shape the future of microtonal
               exploration.
             </p>
@@ -680,7 +686,7 @@ export default function Landing() {
           <div className="pt-8 flex flex-col items-center gap-4">
             <div className="flex items-center gap-6">
               <p className="text-xs text-slate-600">
-                Copyright © {new Date().getFullYear()} Tone Chroma. All rights reserved.
+                Copyright © {new Date().getFullYear()} Xenclavier. All rights reserved.
               </p>
               <Link
                 href="/privacy"

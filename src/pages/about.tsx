@@ -30,8 +30,8 @@ export default function About() {
           </div>
 
           <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
-            <p>The idea for Tone Chroma came to Will Franke when on a bicycle ride in West Bengal, India. He was studying Indian classical music and the ethnomusicology of Bengali mystic folk music.</p>
-            <p>In the vast world of Eastern music, many of the tones do not exist on the traditional keyboard of the West. He wondered if a single instrument could access all these tones, both East and West, in an intuitive way. Thus the origins of Tone Chroma began in my mind.</p>
+            <p>The idea for Xenclavier came to Will Franke when on a bicycle ride in West Bengal, India. He was studying Indian classical music and the ethnomusicology of Bengali mystic folk music.</p>
+            <p>In the vast world of Eastern music, many of the tones do not exist on the traditional keyboard of the West. He wondered if a single instrument could access all these tones, both East and West, in an intuitive way. Thus the origins of Xenclavier began in my mind.</p>
             <p>
               Over time, the mental images manifested into the interface
               accessible now. I wanted to create a tool which expands the
