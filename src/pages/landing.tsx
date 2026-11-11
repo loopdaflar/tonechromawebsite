@@ -252,7 +252,7 @@ export default function Landing() {
               X E N C L A V I E R
             </h1>
             <p className="text-base sm:text-xl text-slate-400 max-w-lg mx-auto leading-relaxed whitespace-nowrap">
-              Interactive Visualizer | Microtonal Matrix
+              Microtonal Matrix | Interactive Visualizer
             </p>
           </div>
 
