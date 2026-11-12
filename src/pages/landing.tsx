@@ -16,6 +16,7 @@ import { NEWSLETTER_FORM_ENDPOINT } from "@/lib/formspree";
 import heroDemoVideo from "@assets/hero_demo_video.mp4";
 import heroDemoVideoDesktop from "@assets/hero_demo_video_desktop.mp4";
 import appLogo from "@assets/Tone_Chroma_Logo_1775747839600.jpg";
+import headerLogo from "@assets/xenclavier-logo.png";
 import showcaseVideo from "@assets/LandscapeInterfaceMediuml_1776024535574.mp4";
 import microtonalMatrixImage from "@assets/LandscapeInterfaceCrop2_1776026182385.mp4";
 import harmonicVisualizerVideo from "@assets/LissajousSmall_1776020529559.mp4";
@@ -161,12 +162,13 @@ export default function Landing() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#08091a]/90 backdrop-blur-lg border-b border-white/5 shadow-lg shadow-black/20" : "bg-transparent"}`}
       >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
           <button
             onClick={() => scrollTo("hero")}
-            className="text-lg font-light tracking-[0.35em] uppercase landing-logo-gradient hover:opacity-80 transition-opacity"
+            aria-label="Xenclavier home"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            Xenclavier
+            <img src={headerLogo} alt="Xenclavier" className="h-11 md:h-14 w-auto" />
           </button>
 
           <div className="hidden md:flex items-center gap-6">

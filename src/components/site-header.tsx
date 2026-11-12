@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import logo from "@assets/xenclavier-logo.png";
 
 const navLinks = [
   { label: "Features", href: "/#about" },
@@ -26,12 +27,13 @@ export function SiteHeader({ scrolled = true }: { scrolled?: boolean }) {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <button
           onClick={() => handleNav("/")}
-          className="text-lg font-light tracking-[0.35em] uppercase landing-logo-gradient hover:opacity-80 transition-opacity"
+          aria-label="Xenclavier home"
+          className="flex items-center hover:opacity-80 transition-opacity"
         >
-          Xenclavier
+          <img src={logo} alt="Xenclavier" className="h-11 md:h-14 w-auto" />
         </button>
 
         <div className="hidden md:flex items-center gap-6">
