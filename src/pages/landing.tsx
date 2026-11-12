@@ -658,7 +658,7 @@ export default function Landing() {
             <div className="flex items-center justify-center gap-4 mt-6">
               {[
                 { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/xenclavier" },
-                { icon: Instagram, label: "Instagram", href: "https://instagram.com/tonechroma.app" },
+                { icon: Instagram, label: "Instagram", href: "https://instagram.com/xenclavier.app" },
                 { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@tonechroma/posts" },
               ].map((social) => (
                 <a
