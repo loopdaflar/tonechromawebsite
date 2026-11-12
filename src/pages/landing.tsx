@@ -659,7 +659,7 @@ export default function Landing() {
               {[
                 { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/xenclavier" },
                 { icon: Instagram, label: "Instagram", href: "https://instagram.com/xenclavier.app" },
-                { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@tonechroma/posts" },
+                { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@xenclavier" },
               ].map((social) => (
                 <a
                   key={social.label}
