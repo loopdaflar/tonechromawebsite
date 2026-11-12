@@ -48,7 +48,7 @@ export function SiteHeader({ scrolled = true }: { scrolled?: boolean }) {
             onClick={() => handleNav("/#waitlist")}
             className="px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white transition-all duration-200 shadow-lg shadow-violet-900/30 hover:shadow-violet-800/40"
           >
-            Stay Connected
+            Follow Us
           </button>
         </div>
 
@@ -76,7 +76,7 @@ export function SiteHeader({ scrolled = true }: { scrolled?: boolean }) {
             onClick={() => handleNav("/#waitlist")}
             className="w-full px-5 py-3 text-sm font-medium rounded-full bg-gradient-to-r from-violet-600 to-blue-600 text-white"
           >
-            Stay Connected
+            Follow Us
           </button>
         </div>
       )}

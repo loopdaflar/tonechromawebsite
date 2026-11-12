@@ -60,6 +60,7 @@ const PRIVACY_HTML = `
   <li>names</li>
   <li>email addresses</li>
 </ul>
+<p><strong>Purchase Information.</strong> If you buy Xenclavier Pro, your purchase is processed by Apple. We use RevenueCat to verify your purchase and unlock Pro. RevenueCat receives an anonymous identifier and your purchase history, and does not receive your name, email, or payment details.</p>
 <p><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
 <p>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
 
@@ -107,6 +108,7 @@ const PRIVACY_HTML = `
 <p><em><strong>In Short:</strong> We may share information in specific situations described in this section and/or with the following third parties.</em></p>
 <p>We may need to share your personal information in the following situations:</p>
 <ul>
+  <li><strong>Purchase Verification.</strong> If you buy Xenclavier Pro, we share an anonymous identifier and your purchase history with RevenueCat, our service provider, so it can verify your purchase and unlock Pro. Your purchase itself is processed by Apple.</li>
   <li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
 </ul>
 
@@ -158,7 +160,7 @@ const PRIVACY_HTML = `
 <tr><td>A. Identifiers</td><td>Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</td><td>YES</td></tr>
 <tr><td>B. Personal information as defined in the California Customer Records statute</td><td>Name, contact information, education, employment, employment history, and financial information</td><td>YES</td></tr>
 <tr><td>C. Protected classification characteristics under state or federal law</td><td>Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data</td><td>NO</td></tr>
-<tr><td>D. Commercial information</td><td>Transaction information, purchase history, financial details, and payment information</td><td>NO</td></tr>
+<tr><td>D. Commercial information</td><td>Transaction information, purchase history, financial details, and payment information</td><td>YES</td></tr>
 <tr><td>E. Biometric information</td><td>Fingerprints and voiceprints</td><td>NO</td></tr>
 <tr><td>F. Internet or other similar network activity</td><td>Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements</td><td>NO</td></tr>
 <tr><td>G. Geolocation data</td><td>Device location</td><td>NO</td></tr>
