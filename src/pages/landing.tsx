@@ -332,8 +332,8 @@ export default function Landing() {
               </p>
               <p className="text-slate-300">
                 Enter new horizons with pure frequency ratios &amp; synesthetic
-                forms where you <em>hear</em> and <em>see</em> universal
-                vibrational patterns.
+                forms. <em>Hear</em> and <em>see</em> universal vibrational
+                patterns.
               </p>
             </div>
           </RevealSection>
